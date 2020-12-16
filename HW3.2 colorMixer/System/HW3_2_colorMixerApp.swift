@@ -11,7 +11,7 @@ import SwiftUI
 struct HW3_2_colorMixerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }

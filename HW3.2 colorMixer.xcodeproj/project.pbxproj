@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		7FF0358E2587537E00D7491B /* HW3_2_colorMixerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0358D2587537E00D7491B /* HW3_2_colorMixerApp.swift */; };
-		7FF035902587537E00D7491B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0358F2587537E00D7491B /* ContentView.swift */; };
+		7FF035902587537E00D7491B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0358F2587537E00D7491B /* MainView.swift */; };
 		7FF035922587538100D7491B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FF035912587538100D7491B /* Assets.xcassets */; };
 		7FF035952587538100D7491B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FF035942587538100D7491B /* Preview Assets.xcassets */; };
+		7FF0359F2588EF6F00D7491B /* SliderStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0359E2588EF6F00D7491B /* SliderStack.swift */; };
+		7FF035A3258929CD00D7491B /* MulticolorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF035A2258929CD00D7491B /* MulticolorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7FF0358A2587537E00D7491B /* HW3.2 colorMixer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW3.2 colorMixer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FF0358D2587537E00D7491B /* HW3_2_colorMixerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW3_2_colorMixerApp.swift; sourceTree = "<group>"; };
-		7FF0358F2587537E00D7491B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7FF0358F2587537E00D7491B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7FF035912587538100D7491B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FF035942587538100D7491B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7FF035962587538100D7491B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FF0359E2588EF6F00D7491B /* SliderStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderStack.swift; sourceTree = "<group>"; };
+		7FF035A2258929CD00D7491B /* MulticolorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticolorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +56,11 @@
 		7FF0358C2587537E00D7491B /* HW3.2 colorMixer */ = {
 			isa = PBXGroup;
 			children = (
-				7FF0358D2587537E00D7491B /* HW3_2_colorMixerApp.swift */,
-				7FF0358F2587537E00D7491B /* ContentView.swift */,
-				7FF035912587538100D7491B /* Assets.xcassets */,
-				7FF035962587538100D7491B /* Info.plist */,
+				7FF0358F2587537E00D7491B /* MainView.swift */,
+				7FF035A2258929CD00D7491B /* MulticolorView.swift */,
+				7FF0359E2588EF6F00D7491B /* SliderStack.swift */,
 				7FF035932587538100D7491B /* Preview Content */,
+				7FF035A5258997BA00D7491B /* System */,
 			);
 			path = "HW3.2 colorMixer";
 			sourceTree = "<group>";
@@ -67,6 +71,16 @@
 				7FF035942587538100D7491B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7FF035A5258997BA00D7491B /* System */ = {
+			isa = PBXGroup;
+			children = (
+				7FF0358D2587537E00D7491B /* HW3_2_colorMixerApp.swift */,
+				7FF035912587538100D7491B /* Assets.xcassets */,
+				7FF035962587538100D7491B /* Info.plist */,
+			);
+			path = System;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FF035902587537E00D7491B /* ContentView.swift in Sources */,
+				7FF035A3258929CD00D7491B /* MulticolorView.swift in Sources */,
+				7FF0359F2588EF6F00D7491B /* SliderStack.swift in Sources */,
+				7FF035902587537E00D7491B /* MainView.swift in Sources */,
 				7FF0358E2587537E00D7491B /* HW3_2_colorMixerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +287,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HW3.2 colorMixer/Preview Content\"";
 				DEVELOPMENT_TEAM = WM9XM3NC73;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "HW3.2 colorMixer/Info.plist";
+				INFOPLIST_FILE = "HW3.2 colorMixer/System/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -280,7 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Tokarev-Dmitry.HW3-2-colorMixer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -293,7 +309,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"HW3.2 colorMixer/Preview Content\"";
 				DEVELOPMENT_TEAM = WM9XM3NC73;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "HW3.2 colorMixer/Info.plist";
+				INFOPLIST_FILE = "HW3.2 colorMixer/System/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,7 +318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Tokarev-Dmitry.HW3-2-colorMixer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
