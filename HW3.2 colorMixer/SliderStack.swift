@@ -10,11 +10,10 @@ import SwiftUI
 struct SliderStack: View {
     
     @Binding var rgbValue: Double
-    @Binding var tempValue: Double
-    @Binding var inputValue: Double
     @Binding var alert: Bool
+    @State var tempValue = 0.0
+    @State var inputValue = 0.0
     var lineColor: Color = .blue
-//Использовал var для дефолтного значения
     
     var body: some View {
         ZStack {
@@ -46,18 +45,13 @@ struct SliderStack: View {
     }
 }
 
-
 struct SliderStack_Previews: PreviewProvider {
     @State static var testValue = 40.0
-    @State static var tempPreviosValue = 0.0
-    @State static var inputValue = 0.0
     @State static var showAlert = false
     static var previews: some View {
         ZStack{
             Color(.gray)
             SliderStack(rgbValue: $testValue,
-                        tempValue: $tempPreviosValue,
-                        inputValue: $inputValue,
                         alert: $showAlert)
         }
         .ignoresSafeArea()
